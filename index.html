@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre Simulado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Mercado Simulado</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar produtos">
+                <button onclick="searchProducts()">Buscar</button>
+            </div>
+            <div class="cart">
+                <button onclick="toggleCart()">Carrinho (<span id="cart-count">0</span>)</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products" id="product-list">
+            <!-- Produtos serão inseridos aqui pelo JavaScript -->
+        </section>
+        <section class="cart-container" id="cart-container">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão inseridos aqui pelo JavaScript -->
+            </ul>
+            <p id="total-price">Total: R$ 0,00</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
